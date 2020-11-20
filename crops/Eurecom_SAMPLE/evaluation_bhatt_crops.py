@@ -92,15 +92,12 @@ def main(fake_dir, real_dir, experiment, roi):
     # Bhattacharyya metrics
     bhatt_values, bhatt_table = bhatt(master)
     bhatt_table = pd.concat([bhatt_table, b], axis=1)
-    bhatt_table.to_csv('/Users/catherine/Documents/GANs_Research/my_imps/research_models/v3/Crops/Eurecom/%s/bhatt_%s.csv' % (experiment, roi))
+    bhatt_table.to_csv('/Users/xxx/Documents/GANs_Research/my_imps/research_models/v3/Crops/Eurecom/%s/bhatt_%s.csv' % (experiment, roi))
     print("done")
 
 
 ### MAIN ###
 if __name__ == '__main__':
-
-    #fake_dir = '/Users/catherine/Documents/GANs_Research/my_imps/research_models/evaluation/exp_a1/fake_B'
-    #real_dir = '/Users/catherine/Documents/GANs_Research/my_imps/research_models/evaluation/exp_a1/real_B'
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--real_dir", type=str, default="none", help="path real_B directory")
