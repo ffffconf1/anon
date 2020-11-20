@@ -11,8 +11,8 @@ GAN implementation in PyTorch to include the code for:
 - Under `favtGAN/pix2pix`, the implementation by Erik Lindernoren at https://github.com/eriklindernoren/PyTorch-GAN#pix2pix, with the only modification of one-sided smooth labels for the valid tensor.
 
 Preprocessing for Crops:
-- We provide a sample of Eurecom images in `crops/Eurecom_SAMPLE`. There are whole face Eurecom images of 21 generated thermal images from the "EIO_sensor_V4" experiment in `crops/EIO_sensor_fake_B`.
-- Real ground-truth thermal cropped examples for the eye, mouth, and nose are provided in `crops/crops_real_B_SAMPLE` for the same 21 images.
+- We provide a sample of Eurecom images in `crops/Eurecom_SAMPLE`. There are whole face Eurecom images of 5 generated thermal images from the "EIO_sensor_V4" experiment in `crops/EIO_sensor_fake_B`.
+- Real ground-truth thermal cropped examples for the eye, mouth, and nose are provided in `crops/crops_real_B_SAMPLE` for the same 5 images.
 - In `crops/EIO_sensor_V4` are the crops of the eye, mouth, and nose taken from the generated faces. the script used to take the crops is shown in the notebook `Eurecom Official Crops.ipynb`.
 - Running the cells in the notebook, will call the Bhattacharrya, PSNR, and SSIM python scripts.
 - This outputs csv's under `crops/EIO_sensor_V4` with all image quality scores for the eyes, mouth, and nose.
