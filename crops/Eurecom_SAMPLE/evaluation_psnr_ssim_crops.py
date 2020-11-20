@@ -146,7 +146,7 @@ def main(fake_dir, real_dir, experiment, roi):
 
     psnr_values, psnr_table = psnr(master)
     psnr_table = pd.concat([psnr_table, b], axis=1)
-    psnr_table.to_csv('/Users/catherine/Documents/GANs_Research/my_imps/research_models/v3/Crops/Eurecom/%s/psnr_%s.csv' % (experiment, roi))
+    psnr_table.to_csv('/Users/xxx/Documents/GANs_Research/my_imps/research_models/v3/Crops/Eurecom/%s/psnr_%s.csv' % (experiment, roi))
     print("Done with PSNR")
     # SSIM metrics
     reals, reals_image_names, real_digits_, fakes, fakes_image_names, fake_digits_ = convert_grayscale(real_dir, fake_dir)
@@ -157,14 +157,11 @@ def main(fake_dir, real_dir, experiment, roi):
     merged = f_df.merge(r_df, on=0)
     master = merged.values.tolist()
     ssim_table = ssim(master)
-    ssim_table.to_csv('/Users/catherine/Documents/GANs_Research/my_imps/research_models/v3/Crops/Eurecom/%s/ssim_%s.csv' % (experiment, roi))
+    ssim_table.to_csv('/Users/xxx/Documents/GANs_Research/my_imps/research_models/v3/Crops/Eurecom/%s/ssim_%s.csv' % (experiment, roi))
     print("Done with SSIM")
 
 ### MAIN ###
 if __name__ == '__main__':
-
-    #fake_dir = '/Users/catherine/Documents/GANs_Research/my_imps/research_models/evaluation/exp_a1/fake_B'
-    #real_dir = '/Users/catherine/Documents/GANs_Research/my_imps/research_models/evaluation/exp_a1/real_B'
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--real_dir", type=str, default="none", help="path real_B directory")
