@@ -27,5 +27,3 @@ Data Preprocessing:
 - Jupyter Notebooks for how the Flir ADAS data was processed as well as the Iris dataset, is provided in `data_proc`
 - The majority of functions focus on resizing images, and dealing w.r.t Iris, the removal of artificial framing and text, in addition to scaling of the visible faces.
 
-<h2>Datasets</h2>
-All datasets used in the experiment are available as .zip files located at <a href="https://umbc.app.box.com/folder/126388888319"> https://umbc.app.box.com/folder/126388888319 </a> A Box account is required for access.
