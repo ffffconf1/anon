@@ -1,8 +1,6 @@
-# cvpr7683
+# anon
 
-
-<h2>favtGAN</h2>
-Code developed for the paper "Visible to Thermal Image Translation of Faces of Mixed Sensor Datasets using Auxiliary Sensor Labels". This repo includes:
+This repo includes:
 
 <p>
 
